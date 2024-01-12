@@ -29,7 +29,8 @@ const Heading1 = () => {
   return (
     <div>
       <Heading />
-
+      <Heading></Heading>
+      {Heading()} {/* we can also do this like normal function call */}
       <h1>Functional component with return {a}</h1>
       <span>{heading}</span>
     </div>

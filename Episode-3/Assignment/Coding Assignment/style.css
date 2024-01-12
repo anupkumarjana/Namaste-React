@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    align-items: center;
+}
+
+.navbar img{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar input{
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+    border-color: rgb(174, 173, 173);
+}
+.navbar span{
+    font-size: 20px;
+    cursor: pointer;
+    color: blue;
+}
+.navbar span:hover{
+    color: darkblue;
+}
