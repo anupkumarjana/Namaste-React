@@ -1,6 +1,13 @@
-.text-color{
-    color: darkgreen;
+#heading {
+  color: red;
 }
 /* #heading{
     color: darkgreen;
 } */
+.box {
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 16px 16px 32px #5a5a5a, -16px -16px 32px #ffffff;
+}
