@@ -94,4 +94,46 @@ Keys should be given to the elements within the array to give the elements a sta
 <li key={2}>3</li>
 ```
 
+## Q: Can we use `index as keys` in React?
+A: Yes, we can use the `index as keys`, but it is not considered as a good practice to use them because if the order of items may change. This can negatively impact performance and may cause issues with component state.
+Keys are taken from each object which is being rendered. There might be a possibility that if we modify the incoming data react may render them in unusual order.
+
+
+## Q: What is `props in React`? Ways to.
+A: props stands for properties. Props are arguments passed into React components. props are used in React to pass data from one component to another (from a parent component to a child component(s)). They are useful when you want the flow of data in your app to be dynamic.
+#### Example
+```
+function App() {
+  return (
+    <div className="App">
+      <Tool name="Chetan Nada" tool="Figma"/> // name and tool are props
+    </div>
+  )
+}
+```
+
+## Q: What is `Config Driven UI`?
+A: `Config Driven UI` are based on the configurations of the data application receives. It is rather a good practice to use config driven UIs to make application for dynamic. 
+It is a very common & basic approach to interact with the User. It provides a generic interface to develop things which help your project scale well. It saves a lot of development time and effort.
+A typical login form, common in most of the Apps. Most of these forms also get frequent updates as the requirements increase in terms of Form Validations, dropdown options,.. or design changes.
+
+
+## Q: Difference between `Virtual DOM` and `Real DOM`?
+A: DOM stands for `Document Object Model`, which represents your application UI and whenever the changes are made in the application, this DOM gets updated and the user is able to visualize the changes. DOM is an interface that allows scripts to update the content, style, and structure of the document.
+- `Virtual DOM`
+    - The Virtual DOM is a light-weight abstraction of the DOM. You can think of it as a copy of the DOM, that can be updated without affecting the actual DOM. It has all the same properties as the real DOM object, but doesn’t have the ability to write to the screen like the real DOM.
+    - Virtual DOM is just like a blueprint of a machine, can do the changes in the blueprint but those changes will not directly apply to the machine.
+    - Reconciliation is a process to compare and keep in sync the two files (Real and Virtual DOM). Diffing algorithm is a technique of reconciliation which is used by React.
+- `Real DOM`
+    - The DOM represents the web page often called a document with a logical tree and each  branch of the tree ends in a node and each node contains object programmers can modify the content of the document using a scripting language like javascript and the changes and updates to the dom are fast because of its tree-like structure but after changes, the updated element and its children have to be re-rendered to update the application UI so the  re-rendering of the UI which make the dom slow all the UI components you need to be rendered for every dom update so real dom would render the entire list and not only those item that receives the update .
+
+|   `Real DOM`    |   `Virtual DOM` |
+|-------------|-----------------|
+| DOM manipulation is very expensive  | DOM manipulation is very easy  | 
+| There is too much memory wastage  | No memory wastage  |
+| It updates Slow | It updates fast |
+| It can directly update HTML | It can’t update HTML directly  |
+|  Creates a new DOM if the element updates. | Update the JSX if the element update |
+| It allows us to directly target any specific node (HTML element) | It can produce about 200,000 Virtual DOM Nodes / Second. |
+| It represents the UI of your application | It is only a virtual representation of the DOM |
 
