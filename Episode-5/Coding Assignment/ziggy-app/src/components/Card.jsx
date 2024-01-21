@@ -22,7 +22,7 @@ export default function Card({
       />
       <div className="mt-4 flex flex-col gap-2">
         <h3>{name}</h3>
-        <h4>{cuisines[0]}</h4>
+        <h4 className="text-wrap">{cuisines.join(", ")}</h4>
         <h4>{costForTwo / 100} for two</h4>
       </div>
     </div>

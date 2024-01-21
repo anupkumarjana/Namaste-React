@@ -4,7 +4,7 @@
     data: {
       type: "F",
       id: "74453",
-      name: "Domino's Pizza",
+      name: "Arpita's Pizza",
       uuid: "87727dbd-7f2b-4857-9763-359624165845",
       city: "21",
       area: "Athwa",
@@ -370,7 +370,7 @@
       area: "Nanpura",
       totalRatingsString: "100+ ratings",
       cloudinaryImageId: "spd3y5gok3vvwqulgmda",
-      cuisines: ["Ice Cream", "Juices", "Desserts", "Beverages"],
+      cuisines: ["Ice Cream", "Juices", "Desserts", "Beverages", "Biriyani", "Arpita"],
       tags: [],
       costForTwo: 20000,
       costForTwoString: "₹200 FOR TWO",

@@ -1,14 +1,26 @@
 import Body from "./components/Body";
 import Header from "./components/Header";
-import datas from "./data/Data.js"
-
+import Search from "./components/Search.jsx";
+import datas from "./data/Data.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-     <Header/>
-     <Body datas={datas}/>
-    </div>
+    <BrowserRouter>
+
+      <Header />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Body datas={datas} />
+            </>
+          }
+        />
+        <Route path="/search" element={<Search />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
