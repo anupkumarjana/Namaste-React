@@ -55,7 +55,7 @@ let myPromise = new Promise(function(resolve, reject) {
 document.getElementById("demo").innerHTML = await myPromise;
 }
 
-myDisplay();
+myDisplay(); ```
 
 ## What is the use of `const json = await data.json();` in getRestaurants()?
 
