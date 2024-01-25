@@ -1,6 +1,6 @@
-Chapter 05 - Let's get Hooked!
-Assignment
-● What is the difference between Named Export, Default export and * as export?
+# Chapter 05 - Let's get Hooked!
+
+## What is the difference between Named Export, Default export and * as export?
 
 => 
     // Named Export can be exported as : export const Body
@@ -19,15 +19,15 @@ Assignment
                     console.log(myModuleE.variableB);  // Output: B
 
 
-● What is the importance of config.js file
+## What is the importance of config.js file
 
 =>  It is manily used to for keeping secret env variables and to keep the constant datas or to store the api keys and credentials.
 
-● What are React Hooks?
+## What are React Hooks?
 
 =>  React Hooks are nothing but powerfull JS utility functions. Which are mainly used to manage state of DOM.
 
-● Why do we need a useState Hook?
+## Why do we need a useState Hook?
 
 =>  To manage state of any component. And by this hook React can update the DOM using Diff algorithm. 
 
