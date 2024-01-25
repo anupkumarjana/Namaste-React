@@ -48,11 +48,16 @@
 
 => `async`, `await` makes promises easier to write. `async` makes a function return a Promise, `await` makes a function wait for a Promise.
 
-```async function myDisplay() {
-let myPromise = new Promise(function(resolve, reject) {
- resolve("I love You !!");
-});
-document.getElementById("demo").innerHTML = await myPromise;
+## What is async and await?
+
+`async`, `await` makes promises easier to write. `async` makes a function return a Promise, `await` makes a function wait for a Promise.
+
+```javascript
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve, reject) {
+    resolve("I love You !!");
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
 }
 
 myDisplay(); ```
